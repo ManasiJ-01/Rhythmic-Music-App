@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+     <link rel="stylesheet" type="text/css" href="/css/main.css">
+     <link rel="stylesheet" type="text/css" href="/css/login.css">
+    
+</head>
+<body>
+	<nav>
+    <div class="navbar">
+        <div class="nav-links">
+            <div class="logo">
+				
+				<img src="/images/m.jpg" alt="music">
+			
+                <span class="logo-text">Rhythmic</span>
+            </div>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact Us</a>
+           
+            <a href="/map-register" class="btn">Register</a>
+            <a href="/map-login" class="btn">Login</a>
+        </div>
+    </div>
+</nav>
+    <div class="container">
+		<form action="/login" method="post">
+        <div>
+            <h1>Login</h1>
+           
+            <label for="email">Email Id :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="pass">Password :</label>
+            <input type="password" id="pass" name="password" required [a-z0-9{8,}]><br><br>
+            <input class="button" type="submit" value="LOGIN">
+        </div>
+        
+    </form>
+	</div>
+    
+    <footer class="footer">
+		
+        <p>&copy; 2023 <span>Rhythmic</span>. All rights reserved.  |  Designed by Rhythmic Musics.</p>
+    </footer>
+</body>
+</html>

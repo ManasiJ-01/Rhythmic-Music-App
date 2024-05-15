@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		
+		<style>
+		label{
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:10px;
+		}	
+		body{
+			background-color:rgb(66, 66, 66);
+			margin-left:auto;
+			margin-right:auto;
+			color:antiquewhite;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		div{
+			padding:3px;
+			margin-left:auto;
+			margin-right:auto;
+			width:500px;
+			height:300px;
+		}
+		
+		.button{
+			background-color: fuchsia;
+			color:rgb(255, 255, 255);
+			width:150px;
+			height:36px;
+			margin-left:auto;
+			margin-right:auto;
+			border-radius: 15px 50px 30px; 
+			align-items: center;
+			margin:auto;
+			padding:3px;
+			border:none;
+			
+		}
+		.button:hover{
+			background-color: deeppink;
+			border:1px solid deeppink;
+		}
+		h1{
+			text-align: center;
+			color:fuchsia;
+		}
+		form{
+			display:grid;
+			text-align: center;
+		}
+		.center_btn{
+			text-align: center;
+		}
+			
+		</style>
+		
+	</head>
+	<body>
+		<form action="/addsongs" method="post">
+		<div id="container">
+			<h1>Add Songs</h1>
+			<hr>
+			<br><br>
+		<label for="name">Song name : <input type="text" id="name" name="name" required></label><br><br>
+		<label for="artist">Song Artist : <input type="text" id="artist" name="artist" ></label><br><br>
+		<label for="genre">Song Genre : <input type="text" id="genre" name="genre" ></label><br><br>
+		<label for="link">Song Link : <input type="text" id="link" name="link" value=" add song link" ></label><br><br>
+		<div class="center_btn">
+				<input class="button" type="submit" value="ADD SONGS">
+		</div>
+		
+		</body>
+		</div>
+		</form>
+	</body>
+</html>
+
+
+

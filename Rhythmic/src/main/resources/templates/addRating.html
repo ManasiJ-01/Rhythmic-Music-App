@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Rating</title>
+    <!-- Link the CSS file using Thymeleaf's 'link' tag -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/rating.css}">
+     <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    
+    
+</head>
+<body>
+	<nav>
+    <div class="navbar">
+        <div class="nav-links">
+            <div class="logo">
+				
+				<img src="/images/m.jpg" alt="music">
+			
+                <span class="logo-text">Rhythmic</span>
+            </div>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact Us</a>
+           
+            <a href="/map-register" class="btn">Register</a>
+            <a href="/map-login" class="btn">Login</a>
+        </div>
+    </div>
+</nav>
+    <div class="container">
+        <div class="card">
+            <form action="/addrating" method="post">
+                <div id="container">
+                    <h1>Add Rating</h1>
+                    <hr>
+                    <br><br>
+                    <!-- Ensure the input field for songName has the name attribute -->
+                    <label for="songName">Song Name: </label>
+                    <input type="text" id="songName" name="songName" required><br><br>
+                    <label for="rating">Rating: </label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 stars">5 </label>
+                       
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 stars">4 </label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 stars">3 </label>
+                       
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 stars">2 </label>
+                        
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 star">1 </label>
+                       
+                    </div><br><br>
+                    <input class="button" type="submit" value="Submit Rating">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

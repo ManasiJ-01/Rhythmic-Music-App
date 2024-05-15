@@ -1,0 +1,116 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Songs</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000, #4a4a4a); /* Gradient background color */
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Good font family */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .song-card {
+            width: 42%; /* Adjust width for two songs per row */
+            border: 2px solid #ff69b4; /* Pink border color */
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            background: linear-gradient(to bottom, #222, #444); /* Gradient background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+            position: relative; /* Position relative for absolute positioning of elements */
+            height: 300px; /* Fixed height for the song cards */
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .song-details {
+            text-align: center;
+            font-size: 20px;
+            background: linear-gradient(45deg, rgb(255, 0, 255), rgb(0, 255, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: cursive;
+            margin-bottom: 20px;
+        }
+        .audio-player {
+            text-align: center; /* Center align audio player */
+            flex-grow: 1;
+            height: 50px; /* Fixed height for the audio player */
+            width: 100%; /* Full width for the audio player */
+        }
+        audio {
+            width: 80%; /* Make audio player width 80% */
+        }
+        .song-actions {
+            text-align: center;
+            width: 100%;
+        }
+        .song-link {
+            color: #00FFFF; /* Neon cyan color for links */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 16px; /* Increased font size */
+        }
+        .song-link:hover {
+            color: #00CED1; /* Hover color */
+        }
+        .add-rating {
+            background-color: rgb(255, 0, 255); /* Pink background color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .add-rating:hover {
+            background-color: rgb(242, 0, 242); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div th:each="song : ${songslist}" class="song-card">
+            <div class="song-details">
+                <p><span style="font-weight: bold;">Name:</span> <span th:text="${song.name}"></span></p>
+                <p><span style="font-weight: bold;">Artist:</span> <span th:text="${song.artist}"></span></p>
+                <p><span style="font-weight: bold;">Genre:</span> <span th:text="${song.genre}"></span></p>
+            </div>
+            <div class="audio-player">
+                <audio controls>
+                    <!-- Use the file name to generate the URL -->
+                    <source th:src="@{/music/{link}(link=${song.link})}" type="audio/mpeg">
+                </audio>
+            </div>
+          
+          
+           
+            <div class="song-actions">
+				
+   
+             <a href="/rate" class="add-rating">Rate the Song</a>
+        </form>
+			</div>
+            
+        </div>
+    </div>
+</body>
+</html>

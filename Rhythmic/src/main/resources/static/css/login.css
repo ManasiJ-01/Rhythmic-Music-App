@@ -1,0 +1,55 @@
+form {
+            background-color: #fff; /* White background for the form */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            box-shadow: 2 4 6px rgb(255, 0, 255); /* Soft shadow effect */
+            width: 300px; /* Adjust width as needed */
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px; /* Add some space below the heading */
+            color: rgb(255, 0, 255); /* Pink heading color */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 22px); /* Take full width minus input padding */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc; /* Grey border */
+            border-radius: 5px; /* Rounded corners for input */
+            outline: none; /* Remove default outline */
+        }
+
+        .button {
+            background-color: rgb(255, 0, 255); /* Pink button color */
+            color: #fff; /* White text color */
+            width: 100%; /* Full width button */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: rgb(219, 0, 219); /* Lighter pink on hover */
+        }
+        
+      .container {
+     		justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: calc(100vh - 128.65px);
+            padding: 0px;
+            display: flex;
+            
+   
+}
+           

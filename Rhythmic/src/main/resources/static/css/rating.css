@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #1e1e1e, #000000 80%, #1a1a2e);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 20px 40px; /* Increase padding for a more spaced-out look */
+}
+
+
+
+.logo-text {
+    background: linear-gradient(45deg, rgb(255, 0, 255), rgb(0, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 0 20px;
+}
+
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin:  10px 25px; /* Adjusted margin for spacing */
+}
+
+
+
+
+.btn {
+    background-color: rgb(255, 0, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px; /* Increase padding for better clickability */
+}
+
+.btn:hover {
+    background-color: rgb(223, 0, 223);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgb(255, 0, 255);
+    padding: 20px;
+    width: 400px;
+}
+
+form {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color:rgb(255, 0, 255);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 18px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="radio"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(255, 0, 255);
+    border-radius: 5px;
+}
+
+.rating {
+    font-size: 25px;
+    color: rgb(255, 255, 11);
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+
+.rating label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\2605";
+}
+
+.rating input[type="radio"]:checked ~ label::before {
+    color:rgb(255, 255, 11);
+}
+
+.button {
+    background-color: rgb(255, 0, 255);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(247, 0, 247);
+}
+
+
+

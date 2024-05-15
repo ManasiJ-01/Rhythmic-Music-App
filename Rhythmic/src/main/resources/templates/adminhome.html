@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <style>
+					
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000, #1e1e1e, #000000 80%, #1a1a2e);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    padding-right: 20px; /* Adjust padding for spacing */
+    border-right: 2px solid rgb(255, 0, 255); /* Reduce border thickness */
+    margin-right: 20px; /* Adjust margin for spacing */
+   cursor: pointer;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+   margin-left: 0; /* Remove padding */
+    margin-right: 10px; /* Adjust margin for spacing */
+}
+
+.navbar {
+    background-color: #333;
+    padding: 20px 40px; /* Increase padding for a more spaced-out look */
+}
+
+
+
+.logo-text {
+    background: linear-gradient(45deg, rgb(255, 0, 255), rgb(0, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 0 20px;
+}
+
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin:  10px 25px; /* Adjusted margin for spacing */
+}
+
+
+
+
+.btn {
+    background-color: rgb(255, 0, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px; 
+    display:flex;
+}
+
+.btn:hover {
+    background-color: rgb(244, 0, 244);
+}
+
+        
+
+        /* Additional styles for the content */
+        h1, a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+        }
+         body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #1e1e1e, #000000 80%, #1a1a2e);
+            color: #fff;
+        }
+        
+        
+        
+        
+
+        /* Additional styles for the content */
+        
+
+        .btn2 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(255, 0, 255);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn2:hover {
+            background-color: rgb(244, 0, 244);
+        }
+        
+        h1{
+			font-family:cursive;
+			color:rgb(255, 255, 255);
+			scrollbar-darkshadow-color: aqua;
+			
+			
+		}
+		
+		main{
+			margin-top: 5px;
+		}
+	
+.container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    padding: 0;
+    margin:0;
+}
+
+
+
+
+.card {
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px; /* Adjusted margin */
+   width: 250px; /* Adjusted max-width */
+    box-shadow: 0 2px 5px rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    
+}
+
+
+.card a {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 255); /* Grey color for card buttons */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card a:hover {
+    background-color: rgb(230, 0, 230); /* Pink color on hover for card buttons */
+}
+
+.card p {
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 16px;
+}
+
+	</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+    <div class="navbar">
+        <div class="nav-links">
+            <div class="logo">
+				
+				<img src="/images/m.jpg" alt="music">
+			
+                <span class="logo-text">Rhythmic</span>
+            </div>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact Us</a>
+           
+            <a href="/map-register" class="btn">Register</a>
+            <a href="/map-login" class="btn">Login</a>
+        </div>
+    </div>
+</nav>
+
+  <div>
+	  <br>
+	  <h1>Welcome admin !</h1>
+  </div>
+    <div class="container">
+      
+
+        <div class="card">
+			<p>Expand your music collection by adding new songs to the database.</p>
+            <a href="/map-songs">Add Songs</a>
+            
+        </div>
+
+        <div class="card">
+			<p>Explore and manage the existing library of songs.</p>
+            <a href="/map-viewsongs">Explore Songs</a>
+            
+        </div>
+
+        <div class="card">
+			 <p>Curate your favorite songs into personalized playlists.</p>
+            <a href="/createplaylist">Create Playlist</a>
+           
+        </div>
+
+        <div class="card">
+			<p>Access and manage your created playlists.</p>
+            <a href="/viewPlaylists">View Playlist</a>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+	
+		
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/register.css">
+		
+	</head>
+	<body>
+<nav>
+    <div class="navbar">
+        <div class="nav-links">
+            <div class="logo">
+				
+				<img src="/images/m.jpg" alt="music">
+			
+                <span class="logo-text">Rhythmic</span>
+            </div>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact Us</a>
+           
+            <a href="/map-register" class="btn">Register</a>
+            <a href="/map-login" class="btn">Login</a>
+        </div>
+    </div>
+</nav>
+
+		<div class="container">
+    
+        <form action="/register" method="post">
+			 <h1>Register</h1>
+		<label for="username">Username : <input type="text" id="username" name="username" required></label>
+		<label for="email">Email Id : <input type="email" id="email" name="email" required></label>
+		<label for="pass">Password : <input type="password" id="pass" name="password" required [a-z0-9{8,}]></label>
+		<div class="radio">
+			<label for="gender">Gender : <input type="radio" id="gender" name="gender" value="male" checked>M  <input type="radio" id="gender" name="gender" value="female" >F  <input type="radio" id="gender" name="gender" value="others">O  </label>
+		<label for="role">Role : <input type="radio" id="role" name="role" value="admin" checked>admin   <input type="radio" id="role" name="role" value="customer">customer   </label>
+		</div>
+		
+		<label for="address">Address : <input type="text" id="address" name="address" required></label>
+		<input class="button" type="submit" value="REGISTER">
+		</form>
+		</div>
+		
+		
+		<footer class="footer">
+		
+        <p>&copy; 2023 <span>Rhythmic</span>. All rights reserved.  |  Designed by Rhythmic Musics.</p>
+    </footer>
+	</body>
+</html>
